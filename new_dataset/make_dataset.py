@@ -70,7 +70,7 @@ def start_grab(n,count):
                     # Show the capture window
                     # cv2.imshow(f"screen{n}",img)
                     # Save image
-                    path = f"Image\{count}.jpg"
+                    path = f"Image\{count+1}.jpg"
                     cv2.imwrite(path,img)
                     key_list[26] = f"{count}.jpg"
                     print(key_list)
