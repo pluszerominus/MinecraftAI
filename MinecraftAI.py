@@ -185,6 +185,8 @@ def CNNmodel():
     # ---Trying change the filter size and numbers of the filters---
     model.add(keras.layers.Conv2D(64,(60,60), padding="same", activation="relu"))
     model.add(keras.layers.MaxPooling2D((2, 2), strides=2))
+    model.add(keras.layers.Conv2D(128,(60,60), padding="same", activation="relu"))
+    model.add(keras.layers.Conv2D(128,(60,60), padding="same", activation="relu"))
     # Size of the exit vector - 15x15x64
     model.add(keras.layers.Flatten())
 
