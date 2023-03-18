@@ -10,7 +10,7 @@ from pynput.keyboard import Key,Controller as KeyboardController
 from pynput.mouse import Controller as MouseController
 from pynput.mouse import Button
 
-print('start')
+#print('start')
 
 # Function with keyboard event exapmles
 def key_mouse():
